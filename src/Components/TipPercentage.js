@@ -1,31 +1,42 @@
-import React from "react";
-import "./TipPercentage.scss";
+import React from "react"
+import "./TipPercentage.scss"
 
 export default function TipPercentage(props) {
   function handleChange(e) {
-    const customTip = e.target.value;
-    props.setPercentage(customTip);
+    const customTip = e.target.value
+    props.setPercentage(customTip)
   }
 
-  console.log(props.percentage);
+  const data = {
+    left: [5, 10, 15],
+    right: [25, 50],
+  }
+
   return (
     <div className="select-tip-container">
       <p>Select Tip %</p>
       <div className="tip-percentage">
         <div className="left-side">
-          <button onClick={() => props.setPercentage(5)}>5%</button>
-          <button onClick={() => props.setPercentage(10)}>10%</button>
-          <button onClick={() => props.setPercentage(15)}>15%</button>
+          {data.left.map((number) => {
+            return (
+              <button key={number} onClick={() => props.setPercentage(number)}>
+                {number}%
+              </button>
+            )
+          })}
         </div>
         <div className="right-side">
-          <button onClick={() => props.setPercentage(25)}>25%</button>
-          <button onClick={() => props.setPercentage(50)}>50%</button>
+          {data.right.map((number) => {
+            return (
+              <button key={number} onClick={() => props.setPercentage(number)}>
+                {number}%
+              </button>
+            )
+          })}
           <label id="custom-tip" />
-          <form onSubmit={() => props.setPercentage()}>
-            <input onChange={handleChange} type="number" placeholder="Custom" />
-          </form>
+          <input onChange={handleChange} type="number" placeholder="Custom" />
         </div>
       </div>
     </div>
-  );
+  )
 }

@@ -1,11 +1,11 @@
-import React from "react";
-import "./TipAmount.scss";
+import React from "react"
+import "./TipAmount.scss"
 export default function TipAmount(props) {
   const clickHandler = () => {
-    props.setPercentage(0);
-    props.setBillPrice(0);
-    props.setPerPerson(1);
-  };
+    props.setPercentage(0)
+    props.setBillPrice(0)
+    props.setPerPerson(1)
+  }
 
   return (
     <div className="tip-container">
@@ -33,5 +33,5 @@ export default function TipAmount(props) {
       </div>
       <button onClick={clickHandler}>RESET</button>
     </div>
-  );
+  )
 }

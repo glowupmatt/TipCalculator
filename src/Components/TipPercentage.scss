@@ -45,17 +45,16 @@
     background-color: hsl(183, 100%, 15%);
     color: white;
   }
-  form {
-    input {
-      width: 100%;
-      font-size: 0.8rem;
-      height: 8vh;
-      border-radius: 8px;
-      border: none;
-      background-color: hsl(189, 41%, 97%);
-      text-align: right;
-      margin-bottom: 0.5rem;
-      padding-right: 0.5rem;
-    }
+
+  input {
+    width: 100%;
+    font-size: 0.8rem;
+    height: 8vh;
+    border-radius: 8px;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    text-align: right;
+    margin-bottom: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
