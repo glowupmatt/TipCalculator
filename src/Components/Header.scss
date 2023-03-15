@@ -1,0 +1,21 @@
+.header-container {
+  display: flex;
+  min-height: 22vh;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: hsl(185, 41%, 84%);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  h2 {
+    letter-spacing: 13px;
+    color: hsl(184, 14%, 43%);
+    align-self: center;
+  }
+}

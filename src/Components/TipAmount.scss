@@ -1,0 +1,63 @@
+.tip-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40vh;
+  background-color: hsl(183, 100%, 15%);
+  padding: 1.5rem 0.9rem;
+  border-radius: 8px;
+  button {
+    background-color: hsl(172, 67%, 45%);
+    border: none;
+    border-radius: 5px;
+    height: 2rem;
+    color: hsl(183, 100%, 15%);
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+}
+
+.tip-amount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h3 {
+    color: white;
+    font-size: 0.7rem;
+    margin-bottom: 0.2rem;
+  }
+  p {
+    color: hsl(185, 14%, 56%);
+    font-size: 0.5rem;
+  }
+}
+
+.total-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h3 {
+    color: white;
+    font-size: 0.7rem;
+    margin-bottom: 0.2rem;
+  }
+
+  p {
+    color: hsl(185, 14%, 56%);
+    font-size: 0.5rem;
+  }
+}
+
+.price {
+  p {
+    font-size: 1rem;
+    color: hsl(172, 67%, 45%);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .tip-container {
+    min-width: 50%;
+    min-height: 65vh;
+  }
+}

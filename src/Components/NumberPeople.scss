@@ -1,0 +1,26 @@
+.numb-people {
+  display: flex;
+  flex-direction: column;
+  color: hsl(185, 14%, 43%);
+  margin: 1rem 0 1.3rem 0;
+  label {
+    color: hsl(183, 100%, 15%);
+    font-size: 0.6rem;
+  }
+  input {
+    color: hsl(183, 100%, 15%);
+    width: 100%;
+    margin-top: 0.3rem;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    height: 2rem;
+    text-align: right;
+    padding: 1rem;
+  }
+  ::placeholder {
+    color: hsla(183, 100%, 15%, 0.6);
+    font-size: 0.7rem;
+  }
+}

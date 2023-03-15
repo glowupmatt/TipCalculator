@@ -1,0 +1,61 @@
+.select-tip-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1.3rem;
+  p {
+    font-size: 0.6rem;
+    color: hsl(185, 14%, 43%);
+  }
+}
+
+.tip-percentage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+  button {
+    font-size: 0.8rem;
+    height: 8vh;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 0.5rem;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+  }
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 47%;
+  button {
+    font-size: 0.8rem;
+    height: 8vh;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 0.5rem;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+  }
+  form {
+    input {
+      width: 100%;
+      font-size: 0.8rem;
+      height: 8vh;
+      border-radius: 8px;
+      border: none;
+      background-color: hsl(189, 41%, 97%);
+      text-align: right;
+      margin-bottom: 0.5rem;
+      padding-right: 0.5rem;
+    }
+  }
+}
